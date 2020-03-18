@@ -1,11 +1,22 @@
 module.exports = {
   siteMetadata: {
-    title: `cptns_blog`,
+    title: `> null_`,
     author: {
       name: `dev_null`,
       summary: `explorer of the technoverse`,
     },
     description: `a log of my explorations in techno possibility`,
+    menuLinks:[
+      {
+        name:'home',
+        link:'/'
+      },
+      {
+        name:'page2',
+        link:'/page-2'
+      }
+    ]
+  ,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
       twitter: `aerial_ps`,

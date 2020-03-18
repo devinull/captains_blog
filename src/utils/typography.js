@@ -1,22 +1,19 @@
 import Typography from "typography"
-import Wordpress2016 from "typography-theme-wordpress-2016"
 
-Wordpress2016.overrideThemeStyles = () => {
-  return {
-    "a.gatsby-resp-image-link": {
-      boxShadow: `none`,
-    },
-  }
-}
+const typography = new Typography({
+  baseFontSize: '14px',
+  baseLineHeight: 1.42,
+  headerFontFamily: ['Courier'],
+  bodyFontFamily: ['Courier'],
+  // See below for the full list of options.
+})
 
-delete Wordpress2016.googleFonts
+// Output CSS as string.
+typography.toString()
 
-const typography = new Typography(Wordpress2016)
-
-// Hot reload typography in development.
-if (process.env.NODE_ENV !== `production`) {
-  typography.injectStyles()
-}
+// Or insert styles directly into the <head> (works well for client-only
+// JS web apps.
+typography.injectStyles()
 
 export default typography
 export const rhythm = typography.rhythm

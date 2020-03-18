@@ -3,9 +3,21 @@ html {
 	}
 
 a {
-	color:#FF0;
+	color:#FFE738;
+	padding: 4px;
+	text-decoration: none;
 }
 
-p, h1, h2, h3, li {
-	color:#0F0;
+a:hover {
+	color:#F00;
 }
+
+
+p, h1, h2, h3, li {
+	color:#5DCD00;
+}
+
+footer {
+	color:#117700;
+}
+
